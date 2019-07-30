@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<h2>You current IP address is: {{currentIp}}</h2> <button (click)="onClick()">Save</button>
+<h3>Google Maps</h3>
+
+<agm-map [latitude]="lat" [longitude]="lng">
+  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
+
+<router-outlet></router-outlet>
